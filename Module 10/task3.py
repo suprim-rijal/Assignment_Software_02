@@ -1,28 +1,4 @@
 # Task 3
-
-class Elevator:
-
-    def __init__(self, bottom, top):
-        self.bottom = bottom
-        self.top = top
-        self.at_floor = bottom
-
-    def go_to_floor(self, goingto_floor):
-        if goingto_floor > self.top or goingto_floor < self.bottom:
-            print("That floor doesn't exist in this building.")
-            return
-        
-        print(f"Starting at floor {self.at_floor}")
-        while self.at_floor < goingto_floor:
-            self.floor_up()
-
-        while self.at_floor > goingto_floor:
-            self.floor_down()
-
-        print(f"Arrived at floor {self.at_floor}")
-
-# Task 2
-
 class Elevator:
 
     def __init__(self, bottom, top):
