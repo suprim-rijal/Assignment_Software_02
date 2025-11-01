@@ -1,11 +1,11 @@
 
 #Task 2
-
+#I have remove my API key form this program, because GIThub consider it as a threat.
 import json
 import requests
 
 municipality = input("Enter the municipality/city name:").capitalize()
-myAPI_key = "7f6a7ae9fae4bed32ef39e1cd78d4297"
+myAPI_key = input(Enter your API key:)
 
 request = f"https://api.openweathermap.org/data/2.5/weather?q={municipality}&appid={myAPI_key}" 
 
@@ -25,6 +25,7 @@ try:
             
 except requests.exceptions.RequestException as e:
     print ("Request could not be completed.")
+
 
 
 
