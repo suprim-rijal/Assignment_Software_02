@@ -5,7 +5,7 @@ import json
 import requests
 
 municipality = input("Enter the municipality/city name:").capitalize()
-myAPI_key = input(Enter your API key:)
+myAPI_key = input("Enter your API key:")
 
 request = f"https://api.openweathermap.org/data/2.5/weather?q={municipality}&appid={myAPI_key}" 
 
@@ -30,3 +30,4 @@ except requests.exceptions.RequestException as e:
 
 
     
+
